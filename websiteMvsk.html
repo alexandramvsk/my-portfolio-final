@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexandra Maevskaya - Filmmaker & Creator </title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./index.js" defer></script>
+    <script src="./index2.js" defer></script>
+
+</head>
+
+<body>
+
+    <!-- Mobile Menu Toggle (hidden on desktop) -->
+    <button class="menu-toggle" onclick="toggleMenu()" aria-expanded="false" aria-controls="sidebar">
+        <span class="menu-text">Menu</span>
+        <span class="close-text">Close</span>
+    </button>
+
+    <!-- Left Sidebar (Desktop) / Top Menu (Mobile & iPad) -->
+    <nav class="sidebar" id="sidebar">
+        <div class="logo">
+            <span class="logo-line">ALEXANDRA</span>
+            <span class="logo-line">MAEVSKAYA</span>
+        </div>
+        <div class="subtitle">Videographer & Creator</div>
+
+        <a class="menu-item active" data-section="film">Personal Branding Video</a>
+        <a class="menu-item" data-section="campaign">Fashion Video</a>
+        <a class="menu-item" data-section="commercial">Commercial Campaign</a>
+        <a class="menu-item" data-section="street-styles">Urban Creativity</a>
+        <a class="menu-item" data-section="paintings">Paintings & Pottery</a>
+        <a class="menu-item" data-section="pricing">Pricing</a>
+        <a class="menu-item" data-section="info">Info</a>
+        <div class="language-selector">
+            <div class="language-label" data-lang-key="language">Language</div>
+            <div class="language-buttons">
+                <button class="lang-btn active" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="ru">RU</button>
+                <button class="lang-btn" data-lang="tr">TR</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content" id="mainContent">
+
+        <!-- Film Section -->
+        <div class="content-section active" id="film">
+            <div class="video-grid film">
+                <div class="video-item"
+                    onclick="openFullscreenVideo('https://drive.google.com/file/d/1WOYmXC2ULlwRvNTV1XyMBYmHcdgP0NjJ/preview')">
+                    <div class="video-thumbnail"
+                        style="background-image: url('images/thumbnails:cinematic-portrait.JPG');"></div>
+                    <div class="video-overlay">
+                        <div class="video-title-overlay">Cinematic Portrait</div>
+                    </div>
+                </div>
+
+                <div class="video-item"
+                    onclick="openFullscreenVideo('https://drive.google.com/file/d/1WOYmXC2ULlwRvNTV1XyMBYmHcdgP0NjJ/preview')">
+                    <div class="video-thumbnail" style="background-image: url('path-to-urban-stories-thumbnail.jpg');">
+                    </div>
+                    <div class="video-overlay">
+                        <div class="video-title-overlay">Urban Stories</div>
+                    </div>
+                </div>
+
+                <div class="video-item"
+                    onclick="openFullscreenVideo('https://drive.google.com/file/d/1WOYmXC2ULlwRvNTV1XyMBYmHcdgP0NjJ/preview')">
+                    <div class="video-thumbnail"
+                        style="background-image: url('path-to-moments-in-time-thumbnail.jpg');"></div>
+                    <div class="video-overlay">
+                        <div class="video-title-overlay">Moments in Time</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Campaign Section -->
+        <div class="content-section" id="campaign">
+            <div class="video-grid campaign">
+                <div class="video-item"
+                    onclick="openFullscreenVideo('https://drive.google.com/file/d/VIDEO_ID/preview')">
+                    <div class="video-thumbnail" style="background-image: url('path-to-thumbnail.jpg');"></div>
+                    <div class="video-overlay">
+                        <div class="video-title-overlay">Luxury Brand Campaign 2024</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Commercial Section -->
+        <div class="content-section" id="commercial">
+            <div class="video-grid commercial">
+                <div class="video-item" onclick="playVideo(this)">
+                    <video class="video-player" preload="metadata">
+                        <source src="videos/film1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="video-overlay">
+                        <div class="video-title-overlay">Luxury Brand Campaign 2024</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Street Styles Section -->
+        <div class="content-section" id="street-styles">
+            <div class="video-grid street-styles">
+                <div class="video-item" onclick="playVideo(this)">
+                    <video class="video-player" preload="metadata">
+                        <source src="videos/film1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="video-overlay">
+                        <div class="video-title-overlay">City Vibes</div>
+                    </div>
+                </div>
+
+                <div class="video-item" onclick="playVideo(this)">
+                    <video class="video-player" preload="metadata">
+                        <source src="videos/film1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="video-overlay">
+                        <div class="video-title-overlay">Urban Expression</div>
+                    </div>
+                </div>
+
+                <div class="video-item" onclick="playVideo(this)">
+                    <video class="video-player" preload="metadata">
+                        <source src="videos/film1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="video-overlay">
+                        <div class="video-title-overlay">Street Chronicles</div>
+                    </div>
+                </div>
+
+                <div class="video-item" onclick="playVideo(this)">
+                    <video class="video-player" preload="metadata">
+                        <source src="videos/film1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="video-overlay">
+                        <div class="video-title-overlay">Metropolitan Style</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Paintings & Pottery Section -->
+        <div class="content-section" id="paintings">
+            <div class="paintings-grid">
+                <div class="painting-item">
+                    <img src="images/IMG_6955.jpg" alt="Still Life Lilies" class="painting-image">
+                    <div class="painting-caption">
+                        <div class="painting-title">Still Life Lilies inspired by David Ligare</div>
+                        <div class="painting-details">Oil on Canvas, 2024</div>
+                    </div>
+                </div>
+
+                <div class="painting-item">
+                    <img src="images/Tezza-4533.jpg" alt="Reproduction of 'Sunflowers' by Van Gogh"
+                        class="painting-image">
+                    <div class="painting-caption">
+                        <div class="painting-title">Reproduction of 'Sunflowers' by Van Gogh</div>
+                        <div class="painting-details">Oil on Canvas, 2024</div>
+                    </div>
+                </div>
+
+                <div class="painting-item">
+                    <img src="images/IMG_4598.jpg" alt="Fishes" class="painting-image">
+                    <div class="painting-caption">
+                        <div class="painting-title">Fishes</div>
+                        <div class="painting-details">Oil on canvas, 2024</div>
+                    </div>
+                </div>
+
+                <!-- Добавьтек остальные картины по аналогии -->
+            </div>
+        </div>
+
+        <!-- Pricing Section -->
+        <div class="content-section" id="pricing">
+            <div class="static-content">
+                <h1 data-lang-key="pricing-title">Pricing</h1>
+
+                <h2 data-lang-key="film-video-title">Video Production</h2>
+
+                <div class="pricing-table">
+                    <div class="price-item" onclick="openPricingModal('Personal Branding Video')">
+                        <span class="service-name" data-lang-key="Personal Branding Video ">Personal Branding
+                            Video</span>
+                        <span class="service-price">$300 - $500</span>
+                    </div>
+                    <div class="price-item" onclick="openPricingModal('Fashion Video')">
+                        <span class="service-name" data-lang-key="Fashion Video">Fashion Video</span>
+                        <span class="service-price">$300 - $500</span>
+                    </div>
+                    <div class="price-item" onclick="openPricingModal('Commercial Campaign')">
+                        <span class="service-name" data-lang-key="Commercial Campaign">Commercial Campaign</span>
+                        <span class="service-price">$200 - $400</span>
+                    </div>
+                    <div class="price-item" onclick="openPricingModal('Urban Creativity')">
+                        <span class="service-name" data-lang-key="Urban Creativity">Urban Creativity</span>
+                        <span class="service-price">$4,000 - $20,000</span>
+                    </div>
+                    <div class="price-item" onclick="openPricingModal('Reels')">
+                        <span class="service-name" data-lang-key="Reels">Reels</span>
+                        <span class="service-price">$50 - $90</span>
+                    </div>
+                </div>
+
+                <p data-lang-key="pricing-note"><em>All prices are starting rates and may vary based on project scope,
+                        timeline, and specific requirements. Please contact for detailed quotes.</em></p>
+            </div>
+        </div>
+
+        <!-- Info Section (перенесён отдельно) -->
+        <div class="content-section" id="info">
+            <div class="info-layout">
+                <div class="info-photo">
+                    <img src="images/your-photo.jpg" alt="Portrait" class="info-portrait">
+                </div>
+                <div class="info-text-content">
+                    <h1 data-lang-key="about-alexandra">About Alexandra Maevskaya</h1>
+                    <p data-lang-key="about-text">Alexandra Maevskaya is a multidisciplinary artist based in New York...
+                    </p>
+                    <p data-lang-key="education-text">Alexandra holds an MFA in Film Production from NYU Tisch...</p>
+                    <p data-lang-key="achievements-text">Winner of the 2024 Independent Film Award...</p>
+
+                    <div class="under-text-contact">
+                        <div class="contact-line">alexandra.maevskaya@email.com</div>
+                        <div class="contact-line social-links">
+                            <a href="https://instagram.com/sssasha_m" target="_blank">Instagram</a>
+                            <span class="separator"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+    <!-- Pricing Modals -->
+    <div class="pricing-modal" id="pricing-modal">
+        <div class="pricing-modal-content">
+            <button class="pricing-modal-close" onclick="closePricingModal()">&times;</button>
+            <div id="modal-content"></div>
+        </div>
+    </div>
+
+
+
+
+    </main>
+
+    <!-- Modal for Paintings -->
+    <div class="modal" id="paintingModal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closePaintingModal()">&times;</button>
+            <button class="modal-nav-arrow modal-nav-prev" onclick="navigatePainting(-1)">&#10094;</button>
+            <img class="modal-image" id="modalImage" src="" alt="">
+            <button class="modal-nav-arrow modal-nav-next" onclick="navigatePainting(1)">&#10095;</button>
+            <div class="modal-navigation" id="modalNavigation"></div>
+            <div class="modal-caption">
+                <div class="modal-title" id="modalTitle"></div>
+                <div class="modal-details" id="modalDetails"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="fullscreenVideoModal" class="modal">
+        <div class="modal-content video-fullscreen">
+            <button class="modal-close" onclick="closeFullscreenVideo()">&times;</button>
+            <iframe id="fullscreenIframe" frameborder="0" allowfullscreen allow="autoplay"></iframe>
+        </div>
+    </div>
+    <div class="pricing-modal" id="pricing-modal">
+        <div class="pricing-modal-content">
+            <button class="pricing-modal-close" onclick="closePricingModal()">&times;</button>
+            <div id="modal-content"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>
